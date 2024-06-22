@@ -1,12 +1,12 @@
 remotes::install_github("josefin-werme/LAVA")
 library(LAVA)
 
-input = process.input(input.info.file="C:\\Users\\Derin\\Desktop\\Stat_R\\PD_Sup\\Data\\input_info.txt",
-                      sample.overlap.file=NULL,   #set to NULL, since there is no overlap
-                      ref.prefix="C:\\Users\\Derin\\Desktop\\Stat_R\\PD_Sup\\Data\\g1000_eur\\g1000_eur",                   
+input = process.input(input.info.file="input_info.txt",
+                      sample.overlap.file=NULL,  #set to NULL, since there is no overlap
+                      ref.prefix="g1000_eur",            
                       phenos=c("PD","sodium","potassium")) 
 
-loci = read.loci("C:\\Users\\Derin\\Desktop\\Stat_R\\PD_Sup\\Data\\test.loci")
+loci = read.loci("test.loci") #preprocessed file obtained from https://github.com/josefin-werme/LAVA, added manually 2 loci from GWAS sumstats files
 
 for (i in 1:nrow(loci)) {
   locus = process.locus(loci[i, ], input)
