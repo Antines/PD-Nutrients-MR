@@ -39,5 +39,5 @@ These automated functions streamline the process of preparing and formatting dat
 1. Clone the repository:
    ```bash
    git clone https://github.com/Antines/PD-Nutrients-MR.git
-   cd your-repository PD-Nutrients-MR
+   cd PD-Nutrients-MR
 
