@@ -30,7 +30,7 @@ These automated functions streamline the process of preparing and formatting dat
 
 ## Repository Contents
 
-- `MR.R`: Contains the 3 function for whole MR worklof icluding preparation of GWAS datasets, MR, Reverse MR.
+- `MR.R`: Contains the 3 function for the whole MR worklof icluding preparation of GWAS datasets, MR, Reverse MR.
 - `LAVA.R`: Automated LAVA Analisys followed by the LDSC (for more information - https://github.com/josefin-werme/LAVA) 
 - `LDSC.sh`: Automated Genetic correlation LDSC test (based on original software mannual - https://github.com/bulik/ldsc)
 
